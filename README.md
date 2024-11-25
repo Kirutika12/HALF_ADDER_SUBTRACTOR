@@ -33,9 +33,6 @@ Borrow = A’B
 Figure -02 HALF Subtractor
 
 **Truthtable**
-### ![ha (2)](https://github.com/user-attachments/assets/30246a0e-8a5d-4c3e-ab64-f46624316803)
-
-### ![hs (2)](https://github.com/user-attachments/assets/ce7b0a64-324e-498d-aae8-545c57768b6a)
 
 
 
@@ -54,22 +51,7 @@ Figure -02 HALF Subtractor
 
 
 **Program:**
-### Half Adder:
-### module ha(a,b,sum,carry);
-### input a,b;
-### output sum,carry;
-### assign sum=(a^b);
-### assign carry=(a&b);
-### endmodule
 
-### Half Subtractor:
-
-### module hs(a,b,difference,borrow);
-### input a,b;
-### output difference,borrow;
-### assign difference=(a^b);
-### assign borrow=(~a&b);
-### endmodule 
 
 
 
@@ -78,17 +60,9 @@ Figure -02 HALF Subtractor
 ### RegisterNumber:24001080
 
 **RTL realization output**
-### ![funct1](https://github.com/user-attachments/assets/de179bdd-dbe1-4ebd-8d8c-87aef50bf59a)
-
-### ![funct2](https://github.com/user-attachments/assets/bb021940-827a-4221-b996-90e194b86eac)
-
-
 
 
 **Waveform**
-### ![ha](https://github.com/user-attachments/assets/ca08a2cc-5373-4b39-adf3-15b7a4a502d9)
-
-### ![hs](https://github.com/user-attachments/assets/b6eac34c-dc8c-47d0-8690-b4f355f42711)
 
 
 
