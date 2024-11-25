@@ -18,6 +18,7 @@ Half adder is a combinational circuit that performs simple addition of two binar
 
 Sum = A’B+AB’ =A ⊕ B Carry = AB
 
+![image](https://github.com/naavaneetha/HALF_ADDER_SUBTRACTOR/assets/154305477/bd4a0b2c-cdbc-4184-ab08-81578f121e1f)
 
 Figure -01 HALF ADDER
 
@@ -28,11 +29,14 @@ The half-subtractor is a combinational circuit which is used to perform subtract
 Diff = A’B+AB’ =A ⊕ B
 Borrow = A’B
 
-
+![image](https://github.com/naavaneetha/HALF_ADDER_SUBTRACTOR/assets/154305477/d76b099c-513f-4e7c-843a-e2fd028a531a)
  
 Figure -02 HALF Subtractor
 
 **Truthtable**
+### ![ha (2)](https://github.com/user-attachments/assets/d58074b4-45c8-4535-9f2d-7f923d687316)
+
+### ![hs (2)](https://github.com/user-attachments/assets/3e34a9d5-7239-4c60-b0f4-50d2ba7f7e48)
 
 
 
@@ -51,21 +55,39 @@ Figure -02 HALF Subtractor
 
 
 **Program:**
+### Half Adder:
+### module ha(a,b,sum,carry);
+### input a,b;
+### output sum,carry;
+### assign sum=(a^b);
+### assign carry=(a&b);
+### endmodule 
 
 
-
-
+### Half Subtractor:
+### module hs(a,b,difference,borrow);
+### input a,b;
+### output difference,borrow;
+### assign difference=(a^b);
+### assign borrow=(~a&b);
+### endmodule 
 
 ### Developed by:Kirutika KR
 ### RegisterNumber:24001080
 
 **RTL realization output**
+### ![funct1](https://github.com/user-attachments/assets/64ea14f3-a521-4bd5-95fe-f5ea75c84847)
+### ![funct2](https://github.com/user-attachments/assets/bdb6e67c-9987-4456-94eb-9d3840ce1463)
 
 
 **Waveform**
+### ![ha](https://github.com/user-attachments/assets/20919a2b-e12a-4708-b502-8f8853644047)
+### ![hs](https://github.com/user-attachments/assets/bf1c0504-e7fc-4d70-aa46-5081adc98c5a)
+
+
 
 
 
 
 **Result:**
-Thus the half adder and half subtractor are studied and the truth table table,logic gates are verified in Quartus using Verilog programming
+Thus the half adder and half subtractor are studied and the truth table table,logic gates are verified in Quartus II using Verilog programming
