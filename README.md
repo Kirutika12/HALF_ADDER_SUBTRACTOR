@@ -18,7 +18,6 @@ Half adder is a combinational circuit that performs simple addition of two binar
 
 Sum = A’B+AB’ =A ⊕ B Carry = AB
 
-![image](https://github.com/naavaneetha/HALF_ADDER_SUBTRACTOR/assets/154305477/bd4a0b2c-cdbc-4184-ab08-81578f121e1f)
 
 Figure -01 HALF ADDER
 
@@ -29,14 +28,15 @@ The half-subtractor is a combinational circuit which is used to perform subtract
 Diff = A’B+AB’ =A ⊕ B
 Borrow = A’B
 
- ![image](https://github.com/naavaneetha/HALF_ADDER_SUBTRACTOR/assets/154305477/d76b099c-513f-4e7c-843a-e2fd028a531a)
 
+ 
 Figure -02 HALF Subtractor
 
 **Truthtable**
+### ![ha (2)](https://github.com/user-attachments/assets/30246a0e-8a5d-4c3e-ab64-f46624316803)
 
-![Screenshot 2024-11-17 184205](https://github.com/user-attachments/assets/f09f3624-3341-4075-9df4-59d60433d108)
-![Screenshot 2024-11-17 184013](https://github.com/user-attachments/assets/ef9c98e4-003e-4bbc-ab18-0c1e60a7f93f)
+### ![hs (2)](https://github.com/user-attachments/assets/ce7b0a64-324e-498d-aae8-545c57768b6a)
+
 
 
 
@@ -54,29 +54,44 @@ Figure -02 HALF Subtractor
 
 
 **Program:**
+### Half Adder:
+### module ha(a,b,sum,carry);
+### input a,b;
+### output sum,carry;
+### assign sum=(a^b);
+### assign carry=(a&b);
+### endmodule
 
-![Screenshot 2024-11-17 194153](https://github.com/user-attachments/assets/ff6cf85a-4e01-4330-958e-7a2da16a882b)
-![Screenshot 2024-11-17 194851](https://github.com/user-attachments/assets/61966e87-142d-4272-848a-1bdd865f4127)
+### Half Subtractor:
+
+### module hs(a,b,difference,borrow);
+### input a,b;
+### output difference,borrow;
+### assign difference=(a^b);
+### assign borrow=(~a&b);
+### endmodule 
 
 
 
-/* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
 
-Developed by: RegisterNumber:*/
+### Developed by:Kirutika KR
+### RegisterNumber:24001080
 
-**RTL Schematic**
+**RTL realization output**
+### ![funct1](https://github.com/user-attachments/assets/de179bdd-dbe1-4ebd-8d8c-87aef50bf59a)
 
-![Screenshot 2024-11-17 194335](https://github.com/user-attachments/assets/34c3db55-2f91-46ca-a7fa-ff22c33cbb6f)
-![Screenshot 2024-11-17 194921](https://github.com/user-attachments/assets/60253bf7-4097-43f9-81e3-05059464957b)
+### ![funct2](https://github.com/user-attachments/assets/bb021940-827a-4221-b996-90e194b86eac)
 
 
 
-**Output/TIMING Waveform**
 
-![Screenshot 2024-11-17 194609](https://github.com/user-attachments/assets/7a6a28b1-5b4b-4663-8408-e5af7f97001f)
-![Screenshot 2024-11-17 195051](https://github.com/user-attachments/assets/9e70d8c9-31e9-408a-bce8-f25f3bbf8f87)
+**Waveform**
+### ![ha](https://github.com/user-attachments/assets/ca08a2cc-5373-4b39-adf3-15b7a4a502d9)
+
+### ![hs](https://github.com/user-attachments/assets/b6eac34c-dc8c-47d0-8690-b4f355f42711)
+
 
 
 
 **Result:**
-Thus the half adder and half subtractor are studied and the truth table table,logic gates are verified
+Thus the half adder and half subtractor are studied and the truth table table,logic gates are verified in Quartus using Verilog programming
