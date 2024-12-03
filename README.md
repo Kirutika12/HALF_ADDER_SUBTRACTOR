@@ -76,8 +76,9 @@ Figure -02 HALF Subtractor
 ### RegisterNumber:24001080
 
 ## **RTL realization output**
-### ![funct1](https://github.com/user-attachments/assets/64ea14f3-a521-4bd5-95fe-f5ea75c84847)
-### ![funct2](https://github.com/user-attachments/assets/bdb6e67c-9987-4456-94eb-9d3840ce1463)
+### ![ha (3)](https://github.com/user-attachments/assets/99ab04ad-8be7-41f0-ad68-b31c12e56d44)
+### ![hs (3)](https://github.com/user-attachments/assets/3e2eb68e-333e-4b8a-8c49-9a1cc3d23efa)
+
 
 
 ## **Waveform**
